@@ -15,10 +15,10 @@ export default function Fetch2() {
 
     return (
         <div className="min-h-screen bg-gray-100 py-10 px-8">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-5xl mx-auto bg-white p-8 rounded-sm shadow-sm">
                 <div className="flex flex-col items-center mb-10 text-center">
-                    <h1 className="text-4xl font-extrabold text-lime-700 mb-2">
-                        Fetch Grid Card (Fetch 2)
+                    <h1 className="text-3xl font-bold text-lime-800">
+                        Fetch 2
                     </h1>
                 </div>
 
@@ -31,7 +31,7 @@ export default function Fetch2() {
                         {posts.map((post) => (
                             <div
                                 key={post.id}
-                                className="bg-white p-6 rounded-2xl border-2 border-transparent hover:border-lime-400 transition-all duration-300 group"
+                                className="bg-white p-6 rounded-sm shadow-sm border-2 border-transparent hover:border-lime-400 hover:shadow-lg transition-all duration-300 group"
                             >
                                 <div className="w-10 h-10 bg-lime-100 text-lime-600 rounded-full flex items-center justify-center font-bold mb-4 group-hover:bg-lime-500 group-hover:text-white transition-colors">
                                     {post.id}

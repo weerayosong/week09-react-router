@@ -5,6 +5,7 @@ export default function Fetch1() {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
+        // ดึงข้อมูลผู้ใช้งานจาก jsonplaceholder
         fetch('https://jsonplaceholder.typicode.com/users')
             .then((res) => res.json())
             .then((data) => {
@@ -14,23 +15,23 @@ export default function Fetch1() {
     }, [])
 
     return (
-        <div className="min-h-screen bg-gray-100 py-10 px-8">
-            <div className="max-w-5xl mx-auto">
-                <div className="flex items-center gap-3 mb-8">
-                    <h1 className="text-4xl font-extrabold text-lime-700 mb-2">
-                        Fetch Users (Fetch 1)
+        <div className="min-h-screen bg-gray-100 px-8">
+            <div className="max-w-5xl mx-auto bg-white p-8 rounded-sm shadow-sm">
+                <div className="flex justify-center items-center gap-3 mb-8">
+                    <h1 className="text-3xl font-bold text-lime-800">
+                        Fetch 1
                     </h1>
                 </div>
 
                 {isLoading ? (
                     <div className="text-center text-lime-600 text-xl font-semibold animate-pulse">
-                        Fetchin...
+                        Now Fetchin...
                     </div>
                 ) : (
-                    <div className="bg-white rounded-xl overflow-hidden border border-lime-200">
+                    <div className="bg-white rounded-sm shadow-md overflow-hidden border border-lime-200">
                         <table className="w-full text-left border-collapse">
                             <thead>
-                                <tr className="bg-lime-500 text-white">
+                                <tr className="bg-lime-400 text-white">
                                     <th className="p-4 font-semibold">ID</th>
                                     <th className="p-4 font-semibold">Name</th>
                                     <th className="p-4 font-semibold">Email</th>

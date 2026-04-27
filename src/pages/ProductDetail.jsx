@@ -19,15 +19,15 @@ export default function ProductDetail() {
     // 4. แสดง
     return (
         <div className="min-h-screen bg-gray-100 py-10">
-            <div className="max-w-5xl mx-auto bg-white p-8 rounded-xl shadow-sm">
+            <div className="max-w-5xl mx-auto bg-white p-8 rounded-sm shadow-sm">
                 <div className="mb-4">
                     <Link to="/Products">
-                        <span className="p-1 bg-purple-600 hover:bg-purple-300 text-white font-bold rounded-sm">
+                        <span className="p-1 bg-lime-400 hover:bg-lime-300 text-white font-bold rounded-sm">
                             Back to Products
                         </span>
                     </Link>
                 </div>
-                <div className="p-6 bg-white rounded-md shadow-md max-w-lg">
+                <div className="p-6 bg-white rounded-sm shadow-md max-w-lg">
                     <h1 className="text-3xl text-slate-600 font-bold mb-3">
                         {product.name}
                     </h1>

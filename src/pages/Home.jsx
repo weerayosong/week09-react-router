@@ -9,27 +9,29 @@ export default function Home() {
 
     return (
         <div className="min-h-screen bg-gray-100 py-10">
-            <div className="max-w-5xl mx-auto bg-white p-8 rounded-xl shadow-sm">
-                <h1 className="text-center text-2xl font-bold">Home Page</h1>
+            <div className="max-w-5xl mx-auto bg-white p-8 rounded-sm shadow-sm">
+                <h1 className="text-center text-2xl font-bold mb-4">
+                    Home Page
+                </h1>
                 <div className="flex justify-evenly items-center text-xs">
                     <button
-                        className="p-1 m-2 rounded-sm font-bold text-white  bg-purple-600 hover:bg-purple-300"
+                        className="p-1 m-2 rounded-sm font-bold text-white  bg-lime-400 hover:bg-lime-300"
                         onClick={handleNavigate}
                     >
                         Button to About
                     </button>
                     <Link to="/">
-                        <span className="p-1 border font-bold border-purple-600 rounded-sm hover:bg-purple-300">
+                        <span className="p-1 border font-bold border-lime-400 rounded-sm hover:bg-lime-300">
                             Link to Home
                         </span>
                     </Link>
                     <Link to="/about">
-                        <span className="p-1 border font-bold border-purple-600 rounded-sm hover:bg-purple-300">
+                        <span className="p-1 border font-bold border-lime-400 rounded-sm hover:bg-lime-300">
                             Link to About
                         </span>
                     </Link>
                     <Link to="/products">
-                        <span className="p-1 border font-bold border-purple-600 rounded-sm hover:bg-purple-300">
+                        <span className="p-1 border font-bold border-lime-400 rounded-sm hover:bg-lime-300">
                             Link to Products
                         </span>
                     </Link>
