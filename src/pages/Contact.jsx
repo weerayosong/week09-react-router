@@ -7,7 +7,7 @@ export default function Contact() {
     }
 
     return (
-        <div className="min-h-screen bg-gray-100 py-10">
+        <div className="min-h-screen bg-gray-100 py-10 px-8">
             <div className="max-w-5xl mx-auto bg-white p-8 rounded-sm shadow-sm">
                 <h1 className="text-3xl font-bold mb-6 text-black">
                     Contact Us

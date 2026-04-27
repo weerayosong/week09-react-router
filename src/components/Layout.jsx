@@ -2,9 +2,9 @@ import { Outlet, Link } from 'react-router-dom'
 
 export default function Layout() {
     return (
-        <div className="min-h-dvh bg-zinc-50 text-zinc-900 font-sans">
+        <div className="min-h-screen bg-zinc-50 text-zinc-900 font-sans">
             <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-zinc-200 transition-all duration-300">
-                <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+                <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
                     <Link
                         to="/"
                         className="text-2xl font-extrabold tracking-tighter "
@@ -68,7 +68,7 @@ export default function Layout() {
                 </div>
             </nav>
 
-            <main className="max-w-6xl mx-auto py-10 px-6">
+            <main className="flex-1 flex flex-col w-full">
                 <Outlet />
             </main>
         </div>

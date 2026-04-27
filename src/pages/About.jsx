@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 export default function About() {
     return (
-        <div className="text-center min-h-screen bg-gray-100 py-10">
+        <div className="min-h-screen bg-gray-100 py-10 px-8">
             <div className="max-w-5xl mx-auto bg-white p-8 rounded-sm shadow-sm">
                 <h1 className="text-2xl font-bold mb-2">About</h1>
                 <div className="flex flex-col justify-center items-center text-center">

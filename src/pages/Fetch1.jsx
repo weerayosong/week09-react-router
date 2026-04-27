@@ -15,7 +15,7 @@ export default function Fetch1() {
     }, [])
 
     return (
-        <div className="min-h-screen bg-gray-100 px-8">
+        <div className="min-h-screen bg-gray-100 py-10 px-8">
             <div className="max-w-5xl mx-auto bg-white p-8 rounded-sm shadow-sm">
                 <div className="flex justify-center items-center gap-3 mb-8">
                     <h1 className="text-3xl font-bold text-lime-800">
