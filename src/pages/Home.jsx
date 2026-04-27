@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
         <div>
-            <h1 className="text-center text-2xl font-bold">Home Page</h1>
+            <h1 className="text-center text-2xl font-bold p-4">Home Page</h1>
             <button
                 className="p-1 m-2 rounded-sm font-bold text-white  bg-purple-600 hover:bg-purple-300"
                 onClick={handleNavigate}
